@@ -150,7 +150,14 @@ footer{
     margin-top: 10px;
     height:50px;
 }
+.imagebox{
+        pointer:cursor;
 
+}
+.imagebox:hover{
+opacity:0.8;
+    transition: 0.3s;
+}
 
 
 
