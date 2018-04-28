@@ -1,0 +1,74 @@
+tbody,
+html,
+body{
+    height: 100%;
+    margin: 0;
+    font-family: "Trebuchet MS";
+
+
+}
+.wrapper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+}
+
+.desc{
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+}
+.navbar a, #logo{
+    padding: 0.5rem 1rem;
+    color: azure;
+}
+.navbar{
+    top: 50%;
+    display:flex;
+    flex-wrap: nowrap;
+
+}
+.navbar a{
+    display:inline-block;
+    text-align: center;
+    align-self: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 10px;
+
+
+}
+#logo{
+    font-style: italic;
+    font-size: 1.5rem;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+.img-link:hover{
+    opacity:0.8;
+    transition: 0.3s;
+}
+form{
+    margin-top: 20px;
+    padding: 2px 10px 10px 10px;
+    background-color: white;
+}
+form input{
+    margin-bottom: 5px;
+    height:2em;
+
+}
+#submit{
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:#0c5460;
+    color:azure;
+
+}
