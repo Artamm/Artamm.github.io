@@ -1,0 +1,23 @@
+.main{
+    padding: 10px 10px 10px 10px;
+}
+form{
+    background-color: azure;
+    padding: 10px 10px 10px 10px;
+    justify-items: center;
+    margin-bottom: 15px;
+
+}
+#output{
+    font-style: oblique;
+    font-size: 0.8rem;
+    color:grey;
+    width:100%;
+    row-span: 4;
+
+}
+.btn{
+    z-index: 99;
+    top:50%;
+    right:20px;
+}

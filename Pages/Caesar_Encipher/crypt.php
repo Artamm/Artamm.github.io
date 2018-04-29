@@ -1,0 +1,47 @@
+
+<?php
+
+
+function Cipher($ch, $key)
+{
+    if (!ctype_alpha($ch))
+        return $ch;
+
+    $offset = ord(ctype_upper($ch) ? 'A' : 'a');
+    return chr(fmod(((ord($ch) + $key) - $offset), 26) + $offset);
+}
+
+function Encipher($input, $key)
+{
+    $output = "";
+
+    $inputArr = str_split($input);
+    foreach ($inputArr as $ch)
+        $output .= Cipher($ch, $key);
+
+    return $output;
+}
+
+function Decipher($input, $key)
+{
+    return Encipher($input, 26 - $key);
+}
+
+
+
+
+
+$text=$_POST['encText'];
+$key=$_POST['key_caesar'];
+$result="";
+
+
+
+    $choice = $_POST['choice1'];
+
+    if ($choice == "encrypt") {
+        $result = Encipher($text, $key);
+    }
+    if ($choice == "decrypt" ) {
+        $result = Decipher($text, $key);
+    }
