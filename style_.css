@@ -39,6 +39,11 @@ body{
 
 
 }
+.navbar a: hover{
+color:#D0C6FF;
+transition:0.3s;
+}
+
 #logo{
     font-style: italic;
     font-size: 1.5rem;
